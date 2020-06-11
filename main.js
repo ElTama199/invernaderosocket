@@ -1,4 +1,4 @@
-var Socket = new WebSocket('ws://192.168.1.67:81');
+var Socket = new WebSocket('ws://nodeinvernadero.ddns.net:81');
 var ultimo;
 
 var riegoultimo;
