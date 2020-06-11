@@ -1,0 +1,359 @@
+/* Formateamos el label que servirá de contenedor */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+ 
+/* Ocultamos el checkbox html */
+.switch input {
+  display:none;
+}
+ 
+/* Formateamos la caja del interruptor sobre la cual se deslizará la perilla de control o slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(238, 5, 5);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+ 
+/* Pintamos la perilla de control o slider usando el selector before */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(27, 30, 218);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+ 
+/* Cambiamos el color de fondo cuando el checkbox esta activado */
+input:checked + .slider {
+  background-color: #E27AD8;
+}
+ 
+/* Deslizamos el slider a la derecha cuando el checkbox esta activado */ 
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+ 
+/* Aplicamos efecto de bordes redondeados en slider y en el fondo del slider */
+.slider.round {
+  border-radius: 34px;
+}
+ 
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+@media (max-width: 450px){
+  body{
+    background-color: rgb(71, 231, 97);
+  }
+  #dht11{
+    position: absolute;
+  
+    background-color: rgb(71, 231, 97);
+    width: 100%;
+    height: 600px;
+  
+  }
+  #boton{
+    position: absolute;
+    background-color: rgb(71, 231, 97);
+    margin-top: 650px;
+    color: rgb(0, 0, 0);
+    height: 150px;
+    
+    width: 100%;
+    
+    text-align: center;
+  }
+  #hts{
+    text-align: center;
+    margin-top: 500px;
+    
+    height: 150px;
+    position: absolute;
+    color: rgb(22, 22, 22);
+    background-color: rgb(71, 231, 97);
+    width: 100%;
+    
+  }
+  .dh{
+    position: absolute;
+    
+  }
+  #tt{
+  margin-left: 30%;
+  }
+  #botonimg{
+    width: 30%;
+    height: 10%;
+  }
+  #prueba{
+    position: absolute;
+ 
+    margin-left: 40%;
+    
+  }
+  #ht{
+    margin-left: 30%;
+    margin-top: 240px;
+  }
+  #dial {
+    margin-left: 15%;
+    
+      margin-top: 5%;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+  }
+  
+  #humedad {
+    margin-left: 15%;
+    margin-top: 250px;
+    position: absolute;
+    
+    width: 250px;
+    height: 250px;
+  }
+
+  .slider {
+    margin-top: 60px;
+    width: 100%;
+    -webkit-appearance: none;
+  }
+  .slider:focus {
+    outline: none;
+  }
+  .slider::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #ab194f;
+    margin-top: -13px;
+  }
+}
+@media (min-width: 450px) and (max-width: 800px){
+  body{
+    background-color: white;
+  }
+
+  #botonimg{
+    margin-top: 30px;
+  }
+  #dht11{
+    position: absolute;
+  
+    background-color: rgb(206, 196, 62);
+    width: 100%;
+    height: 300px;
+  
+  }
+  #boton{
+    position: absolute;
+    background-color: #ffffff;
+    margin-top: 600px;
+    color: rgb(59, 32, 32);
+    height: 300px;
+    
+    width: 100%;
+    
+    text-align: center;
+  }
+  #hts{
+    text-align: center;
+    margin-top: 300px;
+    
+    height: 300px;
+    position: absolute;
+    color: #ddd;
+    background-color: rgb(80, 62, 12);
+    width: 100%;
+    
+  }
+  .dh{
+    position: absolute;
+    
+  }
+  #tt{
+  margin-left: 10%;
+  }
+  #prueba{
+    position: absolute;
+    font-size: 60px;
+    margin-left: 40%;
+    margin-bottom: 10%;
+  }
+  #ht{
+    margin-left: 70%;
+  }
+  #dial {
+   
+    margin-top: 5%;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+  }
+  
+  #humedad {
+    margin-top: 5%;
+    position: absolute;
+    margin-left: 55%;
+    width: 250px;
+    height: 250px;
+  }
+
+  .slider {
+    margin-top: 60px;
+    width: 100%;
+    -webkit-appearance: none;
+  }
+  .slider:focus {
+    outline: none;
+  }
+  .slider::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #ab194f;
+    margin-top: -13px;
+  }
+
+}
+
+
+
+
+@media(min-width:810px){
+  body{
+    background-color: rgb(32, 98, 197);
+  }
+  #dht11{
+    position: absolute;
+    margin-left: 1%;
+    background-color: rgb(37, 169, 209);
+    width: 45%;
+    height: 300px;
+    border-radius: 100px;
+    border-color: rgb(241, 159, 159);
+  }
+  #boton{
+    
+    position: absolute;
+    background-color: #ffffff;
+    margin-top: 350px;
+    color: rgb(0, 0, 0);
+    height: 300px;
+    margin-left: 30%;
+    width: 45%;
+    border-radius: 100px;
+    text-align: center;
+  }
+  #botonimg{
+    margin-top: 50px;
+    width: 300px;
+  }
+  #hts{
+    text-align: center;
+    
+    margin-left: 50%;
+    height: 300px;
+    position: absolute;
+    color: #ddd;
+    background-color: rgb(80, 62, 12);
+    width: 45%;
+    border-radius: 100px;
+    border-color: red;
+  }
+  .dh{
+    position: absolute;
+    
+  }
+  #tt{
+  margin-left: 10%;
+  }
+  #prueba{
+    position: absolute;
+    font-size: 60px;
+    margin-left: 40%;
+    margin-bottom: 10%;
+  }
+  #ht{
+    margin-left: 70%;
+  }
+  #dial {
+   
+    margin-top: 5%;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+  }
+  
+  #humedad {
+    margin-top: 5%;
+    position: absolute;
+    margin-left: 60%;
+    width: 250px;
+    height: 250px;
+  }
+
+  .slider {
+    margin-top: 60px;
+    width: 100%;
+    -webkit-appearance: none;
+  }
+  .slider:focus {
+    outline: none;
+  }
+  .slider::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #ab194f;
+    margin-top: -13px;
+  }
+}

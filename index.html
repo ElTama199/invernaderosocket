@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Invernadero Internet Of Things -v2</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+  <div id="lg">
+   <input type="password" id="pass" placeholder="password">
+   <button onclick="login();">Logear</button>
+   
+  </div>
+  <div id="dht11">
+    <h2 class="dh" id="tt">Temperatura</h2>
+    <h2 class="dh" id="ht">Humedad</h2>
+    <canvas id="dial"></canvas>
+
+    <canvas id="humedad"></canvas>
+  </div>
+
+
+  <div id="hts">
+    <h2>Humedad de tierra</h2>
+
+  </div>
+
+
+  <div id="boton">
+    <h2 id="boton2">Encender o apagar</h2>
+    <div id="led">
+
+    </div>
+
+    <div id="riego">
+      <div input="hora">
+        Agrege primero la hora de riego:
+        <br>
+        
+        <input type="time" id="time">
+        <button onclick="enviarhora();">Guardar hora</button>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
